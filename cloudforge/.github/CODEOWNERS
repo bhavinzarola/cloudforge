@@ -1,0 +1,6 @@
+# Replace @your-github-username with your handle (or a team) before enabling
+# "Require review from Code Owners" in branch protection.
+*                         @your-github-username
+/infrastructure/          @your-github-username
+/platform/                @your-github-username
+/.github/                 @your-github-username

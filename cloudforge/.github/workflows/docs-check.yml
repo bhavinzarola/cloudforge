@@ -1,0 +1,17 @@
+name: docs-check
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  gitleaks-and-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Phase 6 will pin third-party actions by commit SHA and add real CI.
+      - name: Placeholder
+        run: echo "Phase 1: CI skeleton only. Real quality gates arrive in Phase 6."
